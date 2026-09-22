@@ -1,7 +1,7 @@
 Challenge Sprint 3 - Controle Inteligente de Sessao de Recarga
 (Pensamento Computacional e Automacao com Python / Solucao em Energias Renovaveis)
 
-Video : [COLE AQUI O LINK DO VIDEO]
+Video : https://youtu.be/33rsyKqpltY
 Wokwi: https://wokwi.com/projects/475824775312711681
 
 Integrantes:
