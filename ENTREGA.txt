@@ -1,7 +1,6 @@
 Challenge Sprint 3 - Controle Inteligente de Sessao de Recarga
 (Pensamento Computacional e Automacao com Python / Solucao em Energias Renovaveis)
 
-Repositorio (publico): [COLE AQUI O LINK DO GITHUB]
 Video (YouTube, nao listado): [COLE AQUI O LINK DO VIDEO]
 
 Integrantes:
@@ -10,4 +9,4 @@ Gustavo Torres de Oliveira - RM: 572952
 Lucas Furquim Lima - RM: 568690
 Diogo Chiaradia Santos - RM: 570246
 
-Turma: [PREENCHER]
+Turma: 1ccpj
