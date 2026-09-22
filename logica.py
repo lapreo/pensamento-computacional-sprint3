@@ -11,7 +11,6 @@ precisa ter disponível. Isso é compatível com os três exemplos do enunciado:
 Se o grupo tiver um valor oficial diferente (por exemplo, a potência nominal do
 carregador residencial real), troquem só esta constante — o resto do código não muda.
 """
-from __future__ import annotations
 
 POTENCIA_NOMINAL_RECARGA_W = 2000
 
@@ -46,12 +45,13 @@ def representar(valor: int, bits: int = 16) -> tuple[str, str]:
     """
     limite = 1 << bits
     valor_sem_sinal = valor % limite  # equivalente ao complemento de dois para negativos
-    binario = format(valor_sem_sinal, f"0{bits}b")
-    hexadecimal = format(valor_sem_sinal, f"0{bits // 4}X")
+    # MicroPython não tem a função format() do CPython; a mesma formatação
+    # (zeros à esquerda, largura fixa) funciona embutida na f-string.
+    binario = f"{valor_sem_sinal:0{bits}b}"
+    hexadecimal = f"{valor_sem_sinal:0{bits // 4}X}"
     return binario, hexadecimal
 
 
 def formatar_linha(geracao_w: float, consumo_w: float, disponivel_w: float, status: str) -> str:
     """Uma linha no formato exato pedido no enunciado (item 4)."""
-    return (f"GERACAO: {geracao_w:.0f} W CONSUMO: {consumo_w:.0f} W "
-            f"DISPONIVEL: {disponivel_w:.0f} W  STATUS: {status}")
+    return f"GERACAO: {geracao_w:.0f} W CONSUMO: {consumo_w:.0f} W DISPONIVEL: {disponivel_w:.0f} W  STATUS: {status}"
