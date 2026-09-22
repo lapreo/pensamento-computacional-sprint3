@@ -55,8 +55,7 @@ def rodar_ciclo(geracao_w: float, consumo_w: float) -> None:
 
     print(formatar_linha(geracao_w, consumo_w, disponivel_w, status))
     binario, hexadecimal = representar(int(disponivel_w))
-    print(f"  Representacao de DISPONIVEL ({int(disponivel_w)} W) -> "
-          f"Decimal: {int(disponivel_w)}  Binario: {binario}  Hexadecimal: 0x{hexadecimal}")
+    print(f"  Representacao de DISPONIVEL ({int(disponivel_w)} W) -> Decimal: {int(disponivel_w)}  Binario: {binario}  Hexadecimal: 0x{hexadecimal}")
 
 
 def main() -> None:
