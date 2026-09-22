@@ -2,7 +2,7 @@ Challenge Sprint 3 - Controle Inteligente de Sessao de Recarga
 (Pensamento Computacional e Automacao com Python / Solucao em Energias Renovaveis)
 
 Video : [COLE AQUI O LINK DO VIDEO]
-Woki: https://wokwi.com/projects/475824775312711681
+Wokwi: https://wokwi.com/projects/475824775312711681
 
 Integrantes:
 Rafael Laprega Gontijo Magalhaes - RM: 561975
